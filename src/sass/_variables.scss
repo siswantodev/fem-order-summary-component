@@ -1,0 +1,23 @@
+// COLORS
+// Primary
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$more-bright-blue: hsl(245, 83%, 68%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// Shadow
+$shadow-1: 5px 6px 20px 5px
+	rgba(
+		$color: $bright-blue,
+		$alpha: 0.2,
+	);
+$shadow-2: 5px 6px 40px 7px
+	rgba(
+		$color: $bright-blue,
+		$alpha: 0.2,
+	);

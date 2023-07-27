@@ -1,0 +1,39 @@
+@use './mixins' as mix;
+@use './variables' as var;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	font: inherit;
+	user-select: none;
+}
+
+html {
+	// 1 rem = 10px => 10px / 16px = 62.5%
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var.$pale-blue;
+	background-image: url(../../images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+
+	@include mix.breakpoint(md) {
+		background-image: url(../../images/pattern-background-desktop.svg);
+	}
+
+	main {
+		width: 100%;
+		min-height: 100dvh;
+		display: grid;
+		place-items: center;
+	}
+}
